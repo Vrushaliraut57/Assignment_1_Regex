@@ -1,0 +1,46 @@
+//JIRSS1117
+//Vrushali Raut
+
+
+import java.util.Scanner;
+public class Two_dimension {
+
+	public static void main(String[] args) {
+		//here inilialize scanner
+		Scanner sc = new Scanner(System.in);
+		
+		//assign a values
+		int feet1, inches1, feet2, inches2, totF, totI;
+		
+		System.out.print("Enter Foot 1:");
+		feet1 = sc.nextInt();//input a feet 1st value
+		System.out.print("Enter Inches 1:");
+		inches1 = sc.nextInt();//input a inches 1st value
+		
+		System.out.println();//for blank new line
+		
+		System.out.print("Enter Foot 2:");
+		feet2 = sc.nextInt();//input a feet 2nd value
+		System.out.print("Enter Inches 2:");
+		inches2 = sc.nextInt();//input a inches 2nd value
+		
+		//here add feet & inches
+		totF = feet1 + feet2;
+		totI = inches1 + inches2;
+		
+		//logic will be here
+		if(totI>=12)
+		{
+			totF = totF+1; //when condition is true then in sum of foot increases value 1.
+			totI = totI-12; // and then total of inches - 12 inches.
+		}
+		
+		//program output:
+		System.out.println(totF+" Foot "+totI+" inches");
+		
+		//scanner close
+		sc.close();
+		
+	}
+	
+}

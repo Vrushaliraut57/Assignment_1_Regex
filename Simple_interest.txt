@@ -1,0 +1,32 @@
+//Registration ID: JIRSS1117
+// Vrushali Raut
+
+import java.util.Scanner;
+public class Simple_interest {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		float principalAmount, timePeriod, interestRate, simpleInterest;
+		
+		System.out.println("Please enter the Principalamount:");
+		principalAmount = sc.nextFloat();
+		
+		System.out.println("Please enter the Timeperiod:");
+		timePeriod = sc.nextFloat();
+		
+		System.out.println("Please enter the Interestrate:");
+		interestRate = sc.nextFloat();
+		
+		simpleInterest = (principalAmount * timePeriod * interestRate)/100;
+		
+		System.out.println("The payable amount is"+(simpleInterest + principalAmount));
+		
+		sc.close();
+	}
+
+
+}
+
+		
